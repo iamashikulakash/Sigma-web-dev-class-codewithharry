@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        .boxs
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box1 {
+            width: 344px;
+            height: 200px;
+            background-color: lightgreen;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .box2 {
+            width: 344px;
+            height: 200px;
+            background-color: lightgreen;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .box3 {
+            width: 344px;
+            height: 200px;
+            background-color: lightgreen;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        @media screen and (max-width: 750px) {
+            body {
+                background-color: lightcoral;
+            }
+
+        }
+        @media screen and (max-width: 500px) {
+            body {
+                background-color: lightyellow;
+            }
+            .boxs {
+                flex-direction: column-reverse;
+            }
+            .box1, .box2, .box3 {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxs">
+        <div class="box1">I am Md</div>
+        <div class="box2">Ashikul</div>
+        <div class="box3">Akash</div>
+    </div>
+</body>
+
+</html>
