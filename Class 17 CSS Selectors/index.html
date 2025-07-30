@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selectors */
+        div {
+            background-color: red;
+            color: white;
+        }
+        /* Class selectors */
+        .div1 {
+            background-color: green;
+            color: aqua;
+        }
+        /* Id selectors */
+        #divi2 {
+            background-color: blueviolet;
+            color: orangered;
+            font-style: italic;
+        }
+        /* Child selectors */
+        div > p {
+            color: burlywood;
+        }
+        span > p {
+            color: rgb(255, 25, 178);
+        }
+        article > p {
+            color: rgb(12, 255, 85);
+        }
+        /* Descendant selectors */
+        span > p {
+            color: rgb(255, 25, 178);
+        }
+        /* Universal selectors */
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        /* Pseudo selectors */
+        a:visited {
+            color: yellow;
+        }
+        a:link {
+            color: green;
+        }
+        a:hover {
+            color: red;
+        }
+        p:first-child {
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        I am a div 1.
+        <p>I am para in Div 1</p>
+        <p>Second line</p>
+    </div>
+    <div id="divi2" class="div2">
+        I am div 2.
+        <p>I am para in Div 2</p>
+        <P>Seceond Line</P>
+    </div>
+    <span>
+        <article>
+            /* P is Child selectors of article */
+            <p>I am para in article which is in span</p>
+        </article>
+
+        /* P is Descendant selectors of span */
+        <p>I am para in span</p>
+    </span>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.git.com">Git</a>
+    <div class="selector"></div>
+</body>
+</html>
