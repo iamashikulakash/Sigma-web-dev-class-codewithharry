@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: rgb(99, 99, 255);
+            --seccolor: rgb(255, 99, 99);
+            --seccolor2: rgb(99, 255, 99);
+            --seccolor3: rgb(255, 255, 99);
+            --defpad: 20px;
+            --defop: 0.9;
+            --deffs: 16px;
+
+            /*  
+            color=default color
+            seccolor=secondary color
+            seccolor2=secondary color 2
+            seccolor3=secondary color 3
+            defpad=deault padding size
+            defop=default opacity
+            deffs=default font size */
+        }
+
+        .navv {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+
+        .navv ul {
+            display: flex;
+        }
+
+        .navv ul li {
+            list-style-type: none;
+            padding: var(--defpad);
+            font-size: var(--deffs);
+            font-weight: bold;
+            background-color: var(--seccolor3);
+
+        }
+
+        .navv ul li:first-child {
+            background-color: var(--seccolor2);
+            color: var(--seccolor4, #fff);
+            opacity: var(--defop);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navv">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>CSS Variables Example</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur libero consequatur deleniti accusantium nobis
+            quae harum, vitae atque natus ipsam exercitationem laudantium,
+            cum, cupiditate voluptates adipisci illum rerum distinctio!
+            Quas eum fugiat laboriosam debitis reiciendis officia quaerat,
+            dolor modi quis, repellat reprehenderit voluptate unde, rerum
+            facere illo nihil ab mollitia corporis fuga! Ipsa laudantium
+            dolorum quos unde accusantium officiis sunt?
+        </p>
+
+    </div>
+
+</body>
+
+</html>
