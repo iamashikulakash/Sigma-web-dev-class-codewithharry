@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow in CSS</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            overflow-x: hidden; /* Enables horizontal scrolling */
+            overflow-y: scroll; /* Hides vertical overflow */
+            white-space: ; /* Prevents text from wrapping */
+            text-overflow: ; /* Adds ellipsis (...) for overflowed text */
+            background-color: lightblue;
+            padding: 20px;
+            border: 2px solid blue;
+            box-sizing: border-box; /* Ensures padding and border are included in width/height */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am a gd boy. Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Praesentium assumenda voluptatum perferendis enim illo adipisci 
+        iure numquam quae dignissimos similique quod corrupti voluptas voluptate 
+        consequuntur harum, ex natus mollitia provident quisquam. Necessitatibus
+         voluptates ipsa ad sint, facilis debitis sunt amet distinctio excepturi
+          repudiandae iste, temporibus soluta labore! Amet, expedita alias?
+    </div>
+</body>
+</html>
