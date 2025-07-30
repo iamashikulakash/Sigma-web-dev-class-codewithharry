@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSPosition Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            padding: 15px;
+            margin: 20px;
+            margin-top: 50px;
+            border: 2px solid purple;
+        /*    position: relative;
+            /* This is the parent container */
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            padding: 3px;
+            margin: 3px;
+            top
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: pink;
+            position: relative;
+        }
+
+        .box3 {
+            background-color: chartreuse;
+            position: relative;
+        /*    z-index: 4;
+            /* This box will be on top of the others */
+            left: 25px;
+            /* This box will be shifted to the right */
+        }
+
+        .box4 {
+            background-color: coral;
+            width: 70vw;
+            float: right;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 50px;
+            background-color: #daff34;
+            color: white;
+            display: inline;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            display: inline-flex;
+            float: right;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.w3schools.com/cssref/pr_class_position.asp">CSS Position Property</a></li>
+            <li><a href="https://www.w3schools.com/cssref/pr_class_z-index.asp">CSS Z-Index Property</a></li>
+        </ul>
+    </nav>
+    <div class="parent">
+        <div class="box box1">
+
+        </div>
+        <div class="box box2">
+
+        </div>
+        <div class="box box3">
+
+        </div>
+        <div class="box box4">
+
+        </div>
+    </div>
+</body>
+
+</html>
